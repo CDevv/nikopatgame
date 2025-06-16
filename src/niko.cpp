@@ -1,7 +1,7 @@
 #include "niko.hpp"
 #include <cstdio>
 
-Niko::Niko(Vector2 pos,  Texture texture, Texture patTexture)
+Niko::Niko(Vector2 pos,  Texture texture, Texture patTexture, int *patCount)
 {
     this->pos = pos;
     this->deleted = false;
@@ -14,6 +14,8 @@ Niko::Niko(Vector2 pos,  Texture texture, Texture patTexture)
         pos.x, pos.y,
         static_cast<float>(texture.width), static_cast<float>(texture.height)
     };
+
+    this->patCount = patCount;
 }
 
 void Niko::update()
@@ -25,6 +27,7 @@ void Niko::update()
         secondCounter++;
 
         if (frameCounter == 4) {
+            (*patCount)++;
             deleted = true;
         }
     }

@@ -3,10 +3,11 @@
 #include <raylib.h>
 #include "niko.hpp"
 
+int patCount = 0;
 std::vector<Niko> nikos;
 
 void addNiko(Vector2 pos, Texture texture, Texture patTexture) {
-    nikos.push_back(Niko(pos, texture, patTexture));
+    nikos.push_back(Niko(pos, texture, patTexture, &patCount));
 }
 
 int main()
@@ -66,11 +67,11 @@ int main()
         BeginDrawing();
         ClearBackground(RAYWHITE);
 
-        DrawText("nikopat", 20, 20, 16, BLACK);
-
         for (Niko niko : nikos) {
             niko.draw();
         }
+
+        DrawText(TextFormat("Pat count: %i", patCount), 20, 20, 16, BLACK);
 
         EndDrawing();
     }

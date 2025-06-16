@@ -14,8 +14,9 @@ private:
     Rectangle rect;
     int frameCounter = 0;
     int secondCounter = 0;
+    int *patCount = 0;
 public:
-    Niko(Vector2 pos, Texture texture, Texture patTexture);
+    Niko(Vector2 pos, Texture texture, Texture patTexture, int *patCount);
     void update();
     void draw();
     bool isDeleted();
