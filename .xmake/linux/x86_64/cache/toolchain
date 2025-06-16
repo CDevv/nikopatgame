@@ -1,0 +1,123 @@
+{
+    nasm_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = true,
+        __global = true
+    },
+    fpc_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = true,
+        __global = true
+    },
+    envs_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = true,
+        __global = true
+    },
+    cuda_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = true,
+        __global = true
+    },
+    gfortran_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = true,
+        __global = true
+    },
+    gcc_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = {
+            program = "/usr/bin/gcc",
+            name = "gcc"
+        },
+        __global = true
+    },
+    rust_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = true,
+        __global = true
+    },
+    tool_target_nikopatgame_linux_x86_64_cxx = {
+        toolname = "gcc",
+        toolchain_info = {
+            name = "gcc",
+            arch = "x86_64",
+            plat = "linux",
+            cachekey = "gcc_arch_x86_64_plat_linux"
+        },
+        program = "/usr/bin/gcc"
+    },
+    fasm_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = true,
+        __global = true
+    },
+    swift_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = true,
+        __global = true
+    },
+    yasm_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = true,
+        __global = true
+    },
+    tool_platform_linux_x86_64_cc = {
+        toolname = "gcc",
+        toolchain_info = {
+            name = "gcc",
+            arch = "x86_64",
+            plat = "linux",
+            cachekey = "gcc_arch_x86_64_plat_linux"
+        },
+        program = "/usr/bin/gcc"
+    },
+    go_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = true,
+        __global = true
+    },
+    tool_platform_linux_x86_64_ld = {
+        toolname = "gxx",
+        toolchain_info = {
+            name = "gcc",
+            arch = "x86_64",
+            plat = "linux",
+            cachekey = "gcc_arch_x86_64_plat_linux"
+        },
+        program = "/usr/bin/g++"
+    },
+    cross_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = false,
+        __global = true
+    },
+    nim_arch_x86_64_plat_linux = {
+        plat = "linux",
+        arch = "x86_64",
+        __checked = false,
+        __global = true
+    },
+    tool_target_nikopatgame_linux_x86_64_ld = {
+        toolname = "gxx",
+        toolchain_info = {
+            plat = "linux",
+            name = "gcc",
+            arch = "x86_64",
+            cachekey = "gcc_arch_x86_64_plat_linux"
+        },
+        program = "/usr/bin/g++"
+    }
+}
